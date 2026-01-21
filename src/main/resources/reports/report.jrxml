@@ -1,0 +1,128 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="RapidRide Report" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e93c98e7-a9e8-4836-9fcc-5a44e2d77a1c">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="YEJvb2tpbmdgICwxNSwxNSw4YzEwMTNlZS1lYTQ3LTQ2NTctOWU3ZC1hNGU0NTVkYjAzMGU7"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<parameter name="Booking Id" class="java.lang.String"/>
+	<query language="SQL"><![CDATA[SELECT *
+FROM Booking WHERE booking_id = $P{Booking Id} ]]></query>
+	<field name="booking_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="booking_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="booking_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="ride_to" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ride_to"/>
+		<property name="com.jaspersoft.studio.field.label" value="ride_to"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="distance" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="distance"/>
+		<property name="com.jaspersoft.studio.field.label" value="distance"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="required_date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="required_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="required_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="total_amount" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="total_amount"/>
+		<property name="com.jaspersoft.studio.field.label" value="total_amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="vehicle_count" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="vehicle_count"/>
+		<property name="com.jaspersoft.studio.field.label" value="vehicle_count"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="customer_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="2b893b44-9a2e-4b37-a0c0-ddc265b0743f" x="0" y="30" width="544" height="30" fontSize="15.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Rapid Ride Booking Report]]></text>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="61" splitType="Stretch">
+		<element kind="staticText" uuid="bad35b5d-7d60-4589-b037-8dde3aef9a2e" x="0" y="0" width="72" height="30">
+			<text><![CDATA[booking_id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6104d06c-0a75-4a37-9ef1-0801c6728de6"/>
+		</element>
+		<element kind="staticText" uuid="513d8cf5-37d7-44c4-94d7-23249776ec35" x="72" y="0" width="69" height="30">
+			<text><![CDATA[ride_to]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59525c4e-29ad-4d9f-b8de-5db0fff2dab4"/>
+		</element>
+		<element kind="staticText" uuid="8b1a963e-d0ba-42fc-9b27-d18ba71e7dff" x="141" y="0" width="69" height="30">
+			<text><![CDATA[distance]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f9459ff-4d9f-4840-b08e-191771953221"/>
+		</element>
+		<element kind="staticText" uuid="d2151c98-be9f-4df0-bdd6-345b1e9aec45" x="210" y="0" width="69" height="30">
+			<text><![CDATA[required_date]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d890f77e-ee96-4379-92d6-f9c3cd92e126"/>
+		</element>
+		<element kind="staticText" uuid="b9a4216d-5076-4dff-b00d-520e7732ceef" x="279" y="0" width="69" height="30">
+			<text><![CDATA[total_amount]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0b33bdbf-6454-4bfe-9c20-a25efcd140d7"/>
+		</element>
+		<element kind="staticText" uuid="8b398f1e-0215-43dc-9e6b-9bb3981d87ad" x="348" y="0" width="69" height="30">
+			<text><![CDATA[status]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5846de1a-ced3-4806-ab12-e0731773fd6d"/>
+		</element>
+		<element kind="staticText" uuid="09e419f4-d4ef-45dd-946e-fb8e451a6800" x="417" y="0" width="69" height="30">
+			<text><![CDATA[vehicle_count]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3c9231a8-58c4-4b13-a9ac-ffb2efc7c71b"/>
+		</element>
+		<element kind="staticText" uuid="00995fd8-b0c1-4748-a1ee-0562cbaa8971" x="486" y="0" width="69" height="30">
+			<text><![CDATA[customer_id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="60abd9d2-3f5a-44fe-82da-a74221b66695"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<element kind="textField" uuid="f505301a-5ba7-438d-becb-328a15b575cd" x="0" y="0" width="72" height="30">
+				<expression><![CDATA[$F{booking_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6104d06c-0a75-4a37-9ef1-0801c6728de6"/>
+			</element>
+			<element kind="textField" uuid="7df50dbb-2226-4398-8527-b99ef732737e" x="72" y="0" width="69" height="30">
+				<expression><![CDATA[$F{ride_to}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59525c4e-29ad-4d9f-b8de-5db0fff2dab4"/>
+			</element>
+			<element kind="textField" uuid="8749255d-c39b-4c73-ada3-aa4c19e1d7c8" x="141" y="0" width="69" height="30">
+				<expression><![CDATA[$F{distance}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f9459ff-4d9f-4840-b08e-191771953221"/>
+			</element>
+			<element kind="textField" uuid="df8ecbfd-0350-4d36-b527-0efda63ce4f5" x="210" y="0" width="69" height="30">
+				<expression><![CDATA[$F{required_date}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d890f77e-ee96-4379-92d6-f9c3cd92e126"/>
+			</element>
+			<element kind="textField" uuid="e18529d6-fdea-4278-be42-8031da423f10" x="279" y="0" width="69" height="30">
+				<expression><![CDATA[$F{total_amount}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0b33bdbf-6454-4bfe-9c20-a25efcd140d7"/>
+			</element>
+			<element kind="textField" uuid="f519e065-907f-410d-90ec-9ab9101f118e" x="348" y="0" width="69" height="30">
+				<expression><![CDATA[$F{status}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5846de1a-ced3-4806-ab12-e0731773fd6d"/>
+			</element>
+			<element kind="textField" uuid="c7c412e1-c2b9-4ab6-a0b9-1322c1aa9b97" x="417" y="0" width="69" height="30">
+				<expression><![CDATA[$F{vehicle_count}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3c9231a8-58c4-4b13-a9ac-ffb2efc7c71b"/>
+			</element>
+			<element kind="textField" uuid="78308298-1887-49fb-8ad6-706172df8104" x="486" y="0" width="69" height="30">
+				<expression><![CDATA[$F{customer_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="60abd9d2-3f5a-44fe-82da-a74221b66695"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

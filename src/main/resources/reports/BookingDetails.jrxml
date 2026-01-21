@@ -1,0 +1,178 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="BookingDetails" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="faa35c5d-1a3d-4293-8caa-b5d51cbb9f75">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (5)"/>
+	<parameter name="date" class="java.lang.String"/>
+	<query language="SQL"><![CDATA[SELECT * FROM Booking]]></query>
+	<field name="booking_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="booking_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="booking_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="ride_to" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ride_to"/>
+		<property name="com.jaspersoft.studio.field.label" value="ride_to"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="distance" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="distance"/>
+		<property name="com.jaspersoft.studio.field.label" value="distance"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="required_date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="required_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="required_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="total_amount" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="total_amount"/>
+		<property name="com.jaspersoft.studio.field.label" value="total_amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="vehicle_count" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="vehicle_count"/>
+		<property name="com.jaspersoft.studio.field.label" value="vehicle_count"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="customer_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="1df8a5fe-f4f2-41bd-9d76-1792b7ff64d5" x="-10" y="10" width="580" height="39" fontSize="24.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Booking Details]]></text>
+		</element>
+		<element kind="textField" uuid="8149bd50-c5ec-4ba0-abf1-910f1e3ca87d" x="450" y="10" width="100" height="30" fontSize="14.0" italic="true" hTextAlign="Center">
+			<expression><![CDATA[$P{date}]]></expression>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="61" splitType="Stretch">
+		<element kind="staticText" uuid="ca9f7d5b-88ab-4839-8dca-b5ca6dbc6a7c" x="0" y="0" width="67" height="61" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[booking_id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="254a4b1d-99c0-4525-bc2c-8f930add84b8"/>
+			<box>
+				<pen lineWidth="1.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="558bea41-d2a3-4ef0-a43a-27adaf7a2e6a" x="67" y="0" width="61" height="61" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[ride_to]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0cb359ff-7888-4d82-8d3b-b46013f4b34f"/>
+			<box>
+				<pen lineWidth="1.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="5788ec60-dc7e-4b73-b9d6-feb9a0c6f4aa" x="128" y="0" width="61" height="61" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[distance]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f967c227-7d23-4812-8771-9cf27035336e"/>
+			<box>
+				<pen lineWidth="1.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="651f4daf-7d2c-4896-819b-e06175bd44a8" x="189" y="0" width="61" height="61" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[required_date]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="98d83ae0-28c6-4ce1-988d-7a306a8f0181"/>
+			<box>
+				<pen lineWidth="1.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="41855949-e51b-4b40-9765-111adc530993" x="250" y="0" width="61" height="61" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[total_amount]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="06a6802b-9c85-43a7-b608-9bf2cf099232"/>
+			<box>
+				<pen lineWidth="1.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="4b7ca3c3-851a-4027-9daa-a853103df925" x="311" y="0" width="61" height="61" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[status]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bba50a8f-2e3a-49a9-bbbd-b324cdd01fa8"/>
+			<box>
+				<pen lineWidth="1.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="64781b6a-f800-479e-9404-8c0b3c120ede" x="372" y="0" width="61" height="61" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[vehicle_count]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4025057b-2697-45d8-8aea-065ab5061012"/>
+			<box>
+				<pen lineWidth="1.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="0f106a00-5094-4d2d-8da5-1a03d74d59df" x="433" y="0" width="61" height="61" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[customer_id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="af66d7f6-aa40-428b-bda6-92b3040e3bd3"/>
+			<box>
+				<pen lineWidth="1.25"/>
+			</box>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<element kind="textField" uuid="b39219cf-c505-464a-884a-e5980fd5eefd" x="0" y="0" width="67" height="30" fontSize="12.0" italic="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{booking_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="254a4b1d-99c0-4525-bc2c-8f930add84b8"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="6533efd5-ae8a-4906-8462-1d93ff50199b" x="67" y="0" width="61" height="30" fontSize="12.0" italic="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{ride_to}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0cb359ff-7888-4d82-8d3b-b46013f4b34f"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="90edf394-37bf-46b6-b6cc-eb4c634e3d0b" x="128" y="0" width="61" height="30" fontSize="12.0" italic="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{distance}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f967c227-7d23-4812-8771-9cf27035336e"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="8ef665a7-5373-4ade-a432-ddec3d66e6ce" x="189" y="0" width="61" height="30" fontSize="12.0" italic="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{required_date}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="98d83ae0-28c6-4ce1-988d-7a306a8f0181"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="7e96dea3-6b94-4ccd-9952-baeb1dedf6fd" x="250" y="0" width="61" height="30" fontSize="12.0" italic="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{total_amount}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="06a6802b-9c85-43a7-b608-9bf2cf099232"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="65b7be6c-6623-4425-8ffe-9f4ecda13898" x="311" y="0" width="61" height="30" fontSize="12.0" italic="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{status}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bba50a8f-2e3a-49a9-bbbd-b324cdd01fa8"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="2d5f6093-0faf-4311-81af-22871b90c557" x="372" y="0" width="61" height="30" fontSize="12.0" italic="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{vehicle_count}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4025057b-2697-45d8-8aea-065ab5061012"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="e7906592-771d-4b6f-b237-ff2791086f32" x="433" y="0" width="61" height="30" fontSize="12.0" italic="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{customer_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="af66d7f6-aa40-428b-bda6-92b3040e3bd3"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
